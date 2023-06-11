@@ -1,0 +1,36 @@
+
+
+--------------------------------------------
+
+This is the help manual for Amy's Shell
+
+--------------------------------------------
+
+
+
+Built in commands include
+    exit
+        This exits the shell
+    cd [pathname]
+        This changes the current directory
+        It only accepts one argument
+    pwd
+        Displays the path of current working directory
+    help
+        Displays help manual
+    wait
+        waits until all background jobs have terminated before returning to the prompt.
+
+Supported features include
+    Executing programs and redirection (represented by < and >)
+        [process] < filename > filename
+        [process] > filename
+        [process] < filename 
+    Supports Pipes
+        represented by |
+        Example: processA | processB | processB
+    Supports background processes
+        represented by &
+        Example: [process] &
+        process followed by & at end of command line will run the process in background 
+
